@@ -28,6 +28,11 @@ spring:
         time-to-live: 1d
         #写入redis时是否使用键前缀。
         use-key-prefix: true
+  rabbitmq:
+    addresses: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 
 # mybatis
 mybatis:

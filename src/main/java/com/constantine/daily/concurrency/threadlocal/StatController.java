@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashSet;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentSkipListSet;
 
 @RestController
@@ -12,7 +13,7 @@ public class StatController {
 //    static  Integer c = 0
     static HashSet<Val<Integer>> set = new HashSet<>();
     static ConcurrentSkipListSet<Val<Integer>> set2 = new ConcurrentSkipListSet<>();
-
+    ConcurrentHashMap concurrentHashMap = new ConcurrentHashMap();
     synchronized static void addSet(Val<Integer> val){
         set.add(val);
     }

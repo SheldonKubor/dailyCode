@@ -7,8 +7,6 @@ import java.lang.reflect.Proxy;
 
 public class Client2 {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException {
-        // 设置变量可以保存动态代理类，默认名称以 $Proxy0 格式命名
-        // System.getProperties().setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         // 1. 创建被代理的对象，UserService接口的实现类
         UserServiceImpl userServiceImpl = new UserServiceImpl();
         // 2. 获取对应的 ClassLoader
@@ -29,8 +27,6 @@ public class Client2 {
         proxy.select();
         proxy.update();
 
-        // 保存JDK动态代理生成的代理类，类名保存为 UserServiceProxy
-        // ProxyUtils.generateClassFile(userServiceImpl.getClass(), "UserServiceProxy");
     }
 }
 

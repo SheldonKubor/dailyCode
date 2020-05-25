@@ -1,9 +1,14 @@
 package com.constantine.daily.domain;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 public class User implements Serializable {
+    @NotNull
     private int id;
+
+    @NotBlank
     private String name;
     private int age;
     private int gender;
