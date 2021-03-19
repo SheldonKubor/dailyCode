@@ -3,7 +3,7 @@ package com.constantine.daily.service.impl;
 import com.constantine.daily.dao.UserDao;
 import com.constantine.daily.domain.User;
 import com.constantine.daily.service.UserService;
-import com.sun.tools.javac.util.ServiceLoader;
+//import com.sun.tools.javac.util.ServiceLoader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;
@@ -12,7 +12,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-import java.util.Iterator;
+//import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
@@ -22,7 +22,7 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     private UserDao userDao;
-
+//
 //    public static void main(String[] args) {
 //        ServiceLoader<UserService> loader = ServiceLoader.load(UserService.class);
 //        Iterator iterator = loader.iterator();

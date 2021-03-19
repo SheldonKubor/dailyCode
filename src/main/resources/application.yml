@@ -4,7 +4,7 @@ spring:
     url: jdbc:mysql://localhost:3306/daily
     username: root
     password: majinhao
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     database: 0
     host: localhost
@@ -28,11 +28,11 @@ spring:
         time-to-live: 1d
         #写入redis时是否使用键前缀。
         use-key-prefix: true
-  rabbitmq:
-    addresses: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
+#  rabbitmq:
+#    addresses: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
 
 # mybatis
 mybatis:
